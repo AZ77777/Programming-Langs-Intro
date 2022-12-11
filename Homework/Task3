@@ -1,0 +1,24 @@
+# Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
+# Пример:
+# - x=34; y=-30 -> 4
+# - x=2; y=4-> 1
+# - x=-34; y=-30 -> 3
+
+x = int(input('Enter number x≠0:'))
+y = int(input('Enter number y≠0:'))
+
+
+if x == 0 and y == 0:
+    print('Number inconsistent with condition!')
+elif x > 0 and y > 0:
+    print(
+        f'With coordinates x = {x} and y = {y} your point is in quater 1 ')
+elif x < 0 and y > 0:
+    print(
+        f'With coordinates x = {x} and y = {y} your point is in quater 2 ')
+elif x < 0 and y < 0:
+    print(
+        f'With coordinates x = {x} and y = {y} your point is in quater 3 ')
+elif x > 0 and y < 0:
+    print(
+        f'With coordinates x = {x} and y = {y} your point is in quater 4 ')
