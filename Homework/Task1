@@ -1,0 +1,9 @@
+# Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+number = int(input('Enter number of a week day ranged 1-7'))
+if number < 1 or number > 7:
+    print('Wrong number')
+elif number > 5:
+    print('It is a weekend day')
+else:
+    print('It i2s a weekday')
